@@ -1,5 +1,5 @@
 VERSION 0.7
-PROJECT mirho/earthly-ci-demo
+PROJECT mirho-1234/earthly-ci-demo
 
 
 FROM alpine:3.17
