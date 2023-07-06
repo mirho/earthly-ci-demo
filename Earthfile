@@ -1,5 +1,6 @@
 VERSION 0.7
-PROJECT earthly-technologies/earthly-example-ci-project
+PROJECT mirho/earthly-ci-demo
+
 
 FROM alpine:3.17
 
@@ -11,3 +12,4 @@ hello-world-pipeline:
 
 hello-world:
     RUN echo Hello world
+
