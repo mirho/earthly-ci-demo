@@ -10,6 +10,12 @@ hello-world-pipeline:
     TRIGGER pr main
     BUILD +hello-world
 
+hello-world-pipeline2:
+    PIPELINE
+    TRIGGER push main
+    TRIGGER pr main
+    BUILD +hello-world
+
 hello-world:
     RUN echo Hello world
 
