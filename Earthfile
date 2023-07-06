@@ -17,5 +17,5 @@ hello-world-pipeline2:
     BUILD +hello-world
 
 hello-world:
-    RUN echo Hello world
+    RUN echo Hello world from Earthly!
 
