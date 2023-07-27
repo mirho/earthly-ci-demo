@@ -7,8 +7,6 @@ deps:
     COPY package.json ./
     COPY package-lock.json ./
     RUN npm install
-    RUN npm install
-    RUN npm install
     # Output these back in case npm install changes them.
     SAVE ARTIFACT package.json AS LOCAL ./package.json
     SAVE ARTIFACT package-lock.json AS LOCAL ./package-lock.json
@@ -20,6 +18,9 @@ some-pipeline:
     BUILD +build
 
 build:
+    COPY package.json ./
+    COPY package-lock.json ./
+    RUN npm install
     FROM +deps
     COPY src src
     RUN mkdir -p ./dist && cp ./src/index.html ./dist/
