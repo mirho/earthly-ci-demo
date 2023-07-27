@@ -10,6 +10,12 @@ deps:
     SAVE ARTIFACT package.json AS LOCAL ./package.json
     SAVE ARTIFACT package-lock.json AS LOCAL ./package-lock.json
 
+some-pipeline:
+    PIPELINE
+    TRIGGER push main
+    TRIGGER pr main
+    BUILD +build
+
 build:
     FROM +deps
     COPY src src
