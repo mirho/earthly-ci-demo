@@ -1,5 +1,6 @@
 VERSION 0.7
 FROM node:13.10.1-alpine3.11
+PROJECT mirho-1234/my-project
 WORKDIR /js-example
 
 deps:
