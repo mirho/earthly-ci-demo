@@ -23,7 +23,7 @@ build:
     RUN npx webpack
     SAVE ARTIFACT dist /dist AS LOCAL dist
 
-docker:
+docker2:
     FROM +deps
     COPY +build/dist ./dist
     EXPOSE 8080
