@@ -1,6 +1,6 @@
 VERSION 0.7
 FROM node:13.10.1-alpine3.11
-PROJECT mirho-1234/earthly-ci-demo
+PROJECT 123-md-test/earthly-ci-demo
 WORKDIR /js-example
 
 deps:
